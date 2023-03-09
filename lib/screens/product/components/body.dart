@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sillones/components/search_box.dart';
 import 'package:flutter_sillones/constants.dart';
-import 'package:flutter_svg/svg.dart';
+
+import 'category_list.dart';
 
 class Body extends StatelessWidget {
   const Body({super.key});
@@ -8,22 +10,10 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: <Widget>[
-        Container( 
-          margin: const EdgeInsets.all(kDefaultPadding),
-          padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding, vertical: kDefaultPadding/4 ),
-          decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.4),
-            borderRadius: BorderRadius.circular(20.0),
-            ),
-          
-          child: TextField(
-            decoration: InputDecoration(
-              icon: SvgPicture.asset("assets/icons/search.svg"),
-              ),
-          )
-        ),
-      ],
+      children: const <Widget>[
+        SearchBox(), 
+        CategoryList()
+        ],
     );
   }
 }
