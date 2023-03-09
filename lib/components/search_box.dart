@@ -4,7 +4,7 @@ import 'package:flutter_svg/svg.dart';
 
 
 class SearchBox extends StatelessWidget {
-  const SearchBox({super.key});
+  const SearchBox({super.key, required Null Function(dynamic value) onChanged});
 
   @override
   Widget build(BuildContext context) {

@@ -22,7 +22,7 @@ class ProductScreens extends StatelessWidget {
 AppBar buildAppBar() {
   return AppBar(
     elevation: 0,
-    title: const Text('Dashboard'),
+    title: const Text('Acapulco'),
     centerTitle: false,
     actions: <Widget>[
       IconButton(
